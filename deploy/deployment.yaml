@@ -14,6 +14,8 @@ spec:
       labels:
         app: config-service
     spec:
+      imagePullSecrets:
+      - name: docker-secret
       containers:
       - name: config-service
         image: ghcr.io/zzzang12-cns/config-service
